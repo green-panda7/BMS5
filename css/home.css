@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --honeydew: #F0FFF1;
+    --webcolor: #F2FDFF;
+    --powder_blue: #9AD4D6;
+    --cadet_blue: #69A2B0;
+    --light_steel_blue: #B4C5E4;
+    --black: #000000;
+    --black_coffee: #3C3744;
+    --white: #FFFFFF;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--honeydew);
+    margin: auto;
+    transition: 0.5s;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    position: static;
+}
+
+
+/* headings */
+
+.headings {
+    background: var(--webcolor);
+    position: relative;
+    padding: 15px;
+    text-align: end;
+}
+
+.headings ul li {
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    display: inline-block;
+    left: 15px;
+    padding: 10px;
+}
+
+.headings ion-icon {
+    font-size: 20px;
+    color: var(--black_coffee);
+}
+
+.headings ul li .date {
+    justify-content: end;
+    font-size: 25px;
+    color: var(--black_coffee);
+}
+
+.barangay {
+    height: 200px;
+    background-color: var(--light_steel_blue);
+}
+
+.barangay ul li {
+    display: inline-block;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.barangay ul li .brgy_name {
+    font-size: 25px;
+}
+
+.barangay ul li img {
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+    padding: 1px;
+}
+
+.navigation {
+    background: var(--webcolor);
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    height: 60px;
+    background-color: var(--light_steel_blue);
+}
+
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--black_coffee);
+}
+
+.navigation ul li a:hover {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 35px;
+}
+
+.home_main {
+    width: 100%;
+    display: table;
+    padding: 25px;
+    text-align: center;
+    background-color: var(--webcolor);
+}
+
+.announcements {
+    float: left;
+    width: 25%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.gallery {
+    float: left;
+    width: 50%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.workers_dash {
+    float: left;
+    width: 25%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.brgy_workers {
+    height: 100%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+
+.brgy_workers ion-icon {
+    color: var(--black_coffee);
+    font-size: 150px;
+}
+
+.brgy_workers a {
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--black_coffee);
+}
+
+.brgy_workers ion-icon:hover {
+    color: var(--black);
+    font-size: 200px;
+}
+
+.brgy_workers a:hover {
+    color: var(--black);
+    font-size: 40px;
+}
+
+.dashboard {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.dashboard .brgy_workers_title {
+    margin-top: 20px;
+    font-size: 50px;
+    color: var(--black_coffee);
+}
+
+.dashboard ul li {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    align-items: center;
+}
+
+.dashboard .num {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.dashboard .dashboard_title {
+    font-size: 20px;
+}
+
+.dashboard ul li ion-icon {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 40px;
+    float: left;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.main {
+    padding-top: 60px;
+}
