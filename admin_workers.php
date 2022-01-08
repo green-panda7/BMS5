@@ -15,7 +15,7 @@
         <div class = "headings">
             <ul>
                 <span class="nav">
-                    <li><a href="home.php"><span class="nav_title">HOME</span></a></li>
+                    <li><a href="admin_home.php"><span class="nav_title">HOME</span></a></li>
                     <li><a href="#"><span class="nav_title">SERVICES</span></a></li>
                     <li><a href="#"><span class="nav_title">CONTACT US</span></a></li>
                     <li><a href="#"><span class="nav_title">MAP</span></a></li>

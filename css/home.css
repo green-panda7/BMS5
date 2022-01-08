@@ -1,238 +1,292 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-:root {
-    --honeydew: #F0FFF1;
-    --webcolor: #F2FDFF;
-    --powder_blue: #9AD4D6;
-    --cadet_blue: #69A2B0;
-    --light_steel_blue: #B4C5E4;
-    --black: #000000;
-    --black_coffee: #3C3744;
-    --white: #FFFFFF;
-}
-
-body {
-    background: var(--honeydew);
-    margin: auto;
-    transition: 0.5s;
-}
-
-.container {
-    width: 100%;
-    text-align: center;
-    position: relative;
-}
-
-
-/* headings */
-
-.headings {
-    overflow: hidden;
-    background-color: var(--light_steel_blue);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 65px;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
-    text-align: start;
-}
-
-.headings ul li {
-    list-style: none;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.nav li a {
-    font-size: 25px;
-    margin-left: 50px;
-    color: var(--black_coffee);
-    text-decoration: none;
-}
-
-.nav li a:hover {
-    font-size: 28px;
-    margin-left: 30px;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-.date {
-    margin-top: 5px;
-    font-size: 20px;
-    color: var(--black_coffee);
-    margin-left: 300px;
-    position: relative;
-}
-
-.barangay {
-    height: 200px;
-    background-color: var(--light_steel_blue);
-    margin-top: 65px;
-}
-
-.barangay ul li {
-    display: inline-block;
-    padding: 15px;
-    justify-content: space-between;
-}
-
-.barangay ul li .brgy_name {
-    font-size: 25px;
-}
-
-.barangay ul li img {
-    padding: 1px;
-}
-
-.home_main {
-    width: 100%;
-    display: table;
-    padding: 25px;
-    text-align: center;
-    background-color: var(--webcolor);
-}
-
-.announcements {
-    float: left;
-    width: 25%;
-}
-
-.gallery {
-    float: left;
-    width: 50%;
-}
-
-.workers_dash {
-    float: left;
-    width: 25%;
-}
-
-.brgy_workers {
-    height: 100%;
-    padding: 30px;
-}
-
-.brgy_workers a {
-    text-decoration: none;
-    font-size: 30px;
-    color: var(--black_coffee);
-}
-
-.brgy_workers img {
-    width: 250px;
-    height: 200px;
-    border-radius: 50px;
-}
-
-.brgy_workers img:hover {
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
-}
-
-.brgy_workers a:hover {
-    color: var(--black);
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.dashboard {
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.dashboard .brgy_workers_title {
-    margin-top: 20px;
-    font-size: 50px;
-    color: var(--black_coffee);
-}
-
-.dashboard ul li {
-    padding: 10px;
-    border-radius: 10px;
-    list-style: none;
-    align-items: center;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
-}
-
-.dashboard .num {
-    margin: 15px;
-    font-size: 30px;
-}
-
-.dashboard .dashboard_title {
-    font-size: 20px;
-}
-
-.imgs {
-    padding-top: 10px;
-    padding-left: 20px;
-    float: left;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-
-.sticky+.main {
-    padding-top: 60px;
-}
-
-
-/* admin */
-
-.edit {
-    font-size: 20px;
-    padding: 10px 20px;
-    margin: 10px;
-}
-
-.formTab {
-    background: var(--honeydew);
-    color: var(--black_coffee);
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    margin-top: 10px;
-    text-align: justify;
-}
-
-.formTab form {
-    padding: 20px;
-}
-
-.in_data {
-    padding: 5px;
-    font-size: 20px;
-}
-
-.in_data input {
-    width: 50px;
-    font-size: 20px;
-}
-
-.submit_btn {
-    font-size: 15px;
-    margin-top: 10px;
-    padding: 5px;
-    width: 100%;
-    border-radius: 30px;
-}
-
-.close {
-    float: right;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 2em;
-}
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+     :root {
+        --honeydew: #F0FFF1;
+        --webcolor: #F2FDFF;
+        --powder_blue: #9AD4D6;
+        --cadet_blue: #69A2B0;
+        --light_steel_blue: #B4C5E4;
+        --black: #000000;
+        --black_coffee: #3C3744;
+        --white: #FFFFFF;
+    }
+    
+    body {
+        background: var(--honeydew);
+        margin: auto;
+        transition: 0.5s;
+    }
+    
+    .container {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    /* headings */
+    
+    .headings {
+        overflow: hidden;
+        background-color: var(--light_steel_blue);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+        text-align: start;
+    }
+    
+    .headings ul li {
+        list-style: none;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    
+    .nav li a {
+        font-size: 25px;
+        margin-left: 50px;
+        color: var(--black_coffee);
+        text-decoration: none;
+    }
+    
+    .nav li a:hover {
+        font-size: 28px;
+        margin-left: 30px;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    
+    .date {
+        margin-top: 5px;
+        font-size: 20px;
+        color: var(--black_coffee);
+        margin-left: 300px;
+        position: relative;
+    }
+    
+    .barangay {
+        height: 200px;
+        background-color: var(--light_steel_blue);
+        margin-top: 65px;
+    }
+    
+    .barangay ul li {
+        display: inline-block;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    
+    .barangay ul li .brgy_name {
+        font-size: 25px;
+    }
+    
+    .barangay ul li img {
+        padding: 1px;
+    }
+    /* main content */
+    
+    .home_main {
+        width: 100%;
+        display: table;
+        padding: 25px;
+        text-align: center;
+        background-color: var(--webcolor);
+    }
+    
+    .announcements {
+        float: left;
+        width: 25%;
+        padding: 30px;
+    }
+    
+    .announcement_title {
+        font-size: 30px;
+        color: var(--black_coffee);
+    }
+    
+    .gallery {
+        float: left;
+        width: 50%;
+    }
+    
+    .workers_dash {
+        float: left;
+        width: 25%;
+    }
+    
+    .brgy_workers {
+        height: 100%;
+        padding: 30px;
+    }
+    
+    .brgy_workers a {
+        text-decoration: none;
+        font-size: 30px;
+        color: var(--black_coffee);
+    }
+    
+    .brgy_workers img {
+        width: 250px;
+        height: 200px;
+        border-radius: 50px;
+        margin-top: 20px;
+    }
+    
+    .brgy_workers img:hover {
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .brgy_workers a:hover {
+        color: var(--black);
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .dashboard {
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dashboard .brgy_workers_title {
+        font-size: 30px;
+        color: var(--black_coffee);
+    }
+    
+    .dashboard ul li {
+        padding: 10px;
+        border-radius: 10px;
+        list-style: none;
+        align-items: center;
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+    }
+    
+    .dashboard .num {
+        margin: 15px;
+        font-size: 30px;
+    }
+    
+    .dashboard .dashboard_title {
+        font-size: 20px;
+    }
+    
+    .imgs {
+        padding-top: 10px;
+        padding-left: 20px;
+        float: left;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    
+    .sticky+.main {
+        padding-top: 60px;
+    }
+    /* for admin */
+    /* announcement */
+    
+    .display_ann {
+        font-size: 20px;
+        align-items: center;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .content_ann tr {
+        background: var(--honeydew);
+        color: var(--black_coffee);
+    }
+    
+    .content_ann tr td {
+        text-align: center;
+        border-radius: 10px;
+        width: 500px;
+        box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .in_ann label {
+        font-size: 15px;
+    }
+    
+    .in_ann input {
+        font-size: 15px;
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+        border-radius: 10px;
+    }
+    
+    .ann_btn {
+        font-size: 15px;
+        margin-top: 8px;
+        width: 200px;
+        padding: 5px;
+        border-radius: 30px;
+    }
+    /* dashboard */
+    
+    .edit {
+        padding: 5px 10px;
+        margin: 10px;
+    }
+    
+    .edit img {
+        float: left;
+        align-self: middle;
+    }
+    
+    .txt {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    
+    .formTab {
+        background: var(--honeydew);
+        color: var(--black_coffee);
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        margin-top: 10px;
+        text-align: justify;
+    }
+    
+    .formTab form {
+        padding: 20px;
+    }
+    
+    .in_data {
+        padding: 5px;
+        font-size: 20px;
+    }
+    
+    .in_data input {
+        width: 50px;
+        font-size: 20px;
+    }
+    
+    .submit_btn {
+        font-size: 15px;
+        margin-top: 10px;
+        padding: 5px;
+        width: 100%;
+        border-radius: 30px;
+    }
+    
+    .close {
+        float: right;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 2em;
+    }

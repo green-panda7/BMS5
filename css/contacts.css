@@ -1,0 +1,111 @@
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+     :root {
+        --honeydew: #F0FFF1;
+        --webcolor: #F2FDFF;
+        --powder_blue: #9AD4D6;
+        --cadet_blue: #69A2B0;
+        --light_steel_blue: #B4C5E4;
+        --black: #000000;
+        --black_coffee: #3C3744;
+        --white: #FFFFFF;
+    }
+    
+    body {
+        background: var(--honeydew);
+        margin: auto;
+        transition: 0.5s;
+    }
+    
+    .container {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    /* headings */
+    
+    .headings {
+        overflow: hidden;
+        background-color: var(--light_steel_blue);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+        text-align: start;
+    }
+    
+    .headings ul li {
+        list-style: none;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    
+    .nav li a {
+        font-size: 25px;
+        margin-left: 50px;
+        color: var(--black_coffee);
+        text-decoration: none;
+    }
+    
+    .nav li a:hover {
+        font-size: 28px;
+        margin-left: 30px;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    
+    .date {
+        margin-top: 5px;
+        font-size: 20px;
+        color: var(--black_coffee);
+        margin-left: 300px;
+        position: relative;
+    }
+    
+    .barangay {
+        height: 200px;
+        background-color: var(--light_steel_blue);
+        margin-top: 65px;
+    }
+    
+    .barangay ul li {
+        display: inline-block;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    
+    .barangay ul li .brgy_name {
+        font-size: 25px;
+    }
+    
+    .barangay ul li img {
+        padding: 1px;
+    }
+    
+    .contacts_main {
+        width: 100%;
+        display: table;
+        text-align: center;
+        background-color: var(--webcolor);
+    }
+    
+    .email_contact {
+        float: left;
+        width: 75%;
+        padding: 30px;
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .other_contact {
+        float: left;
+        width: 25%;
+        padding: 30px;
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+    }

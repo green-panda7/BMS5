@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    
+    <?php require('database/edit_home.php'); ?>
     <div class="container">
         <div class = "headings">
             <ul>
                 <span class="nav">
                     <li><a href="admin_home.php"><span class="nav_title">HOME</span></a></li>
                     <li><a href="#"><span class="nav_title">SERVICES</span></a></li>
-                    <li><a href="#"><span class="nav_title">CONTACT US</span></a></li>
+                    <li><a href="admin_contacts.php"><span class="nav_title">CONTACT US</span></a></li>
                     <li><a href="#"><span class="nav_title">MAP</span></a></li>
                 </span>
                 <li class="date">
@@ -38,24 +38,52 @@
     </div>
     <div class="home_main">
         <div class="announcements">
-            yow!
+            <div class="announcement_title">Announcements</div>
+            <div class="display_ann">
+                <div class="content_ann">
+                    <?php
+                        if(mysqli_num_rows($result_ann) > 0){
+                            echo "<table>";
+                                echo "<tr>";
+                                    echo "<th></th>";
+                                echo "</tr>";
+                            while($row = mysqli_fetch_array($result_ann)){
+                                echo "<tr>";
+                                    echo "<td>" . $row['text_anno'] . "</td> ";
+                                echo "</tr>";
+                            }
+                            echo "</table>";
+                            // Free result set
+                            mysqli_free_result($result_ann);
+                        } else{
+                            echo "No records matching your query were found.";
+                        }
+                    ?>
+                </div>
+            </div>
+            <div class="new_ann">
+                <form action = "admin_home.php" method="POST">
+                    <div class="in_ann"><label>Type new announcement here: </label><input type="text" name = "annform" required></div>
+                    <input type="submit" value="Save Announcement" name="insert_ann" class="ann_btn">
+                </form>
+            </div>
         </div>
         <div class="gallery">
             PHOTO GALLERY EDITING HERE!
         </div>
         <div class="workers_dash">
             <div class="brgy_workers">
-                <a href="workers.php">
-                    <img src="images/official.jpg"><br>
+                <a href="admin_workers.php">
                     <span class="brgy_workers_title">Barangay Workers</span>
+                    <img src="images/official.jpg"><br>
                 </a>   
             </div>
             <div class="dashboard">
-                <?php
-                    require("database/edit_dash.php");
-                ?>
                 <div class="brgy_workers_title">Dashboard</div>
-                <button onclick = "openForm('edit')" class= "edit">Edit Data</button>
+                <button onclick = "openForm('edit')" class= "edit">
+                    <img src="images/edit_icon.png" width="20px" height="20px" align="middle">
+                    <span class="txt">Edit Data</span>
+                </button>
                 <div>
                     <ul>
                         <li>
