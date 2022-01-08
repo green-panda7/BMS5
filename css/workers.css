@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --honeydew: #F0FFF1;
+    --webcolor: #F2FDFF;
+    --beau_blue: #C6DBF0;
+    --light_steel_blue: #B4C5E4;
+    --columbia_blue: #CFE8EF;
+    --black: #000000;
+    --black_coffee: #3C3744;
+    --white: #FFFFFF;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--honeydew);
+    margin: auto;
+    transition: 0.5s;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+/* headings */
+
+.headings {
+    overflow: hidden;
+    background-color: var(--light_steel_blue);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+    text-align: start;
+}
+
+.headings ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.nav li a {
+    font-size: 25px;
+    margin-left: 50px;
+    color: var(--black_coffee);
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-size: 28px;
+    margin-left: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.date {
+    margin-top: 5px;
+    font-size: 20px;
+    color: var(--black_coffee);
+    margin-left: 300px;
+    position: relative;
+}
+
+.barangay {
+    height: 200px;
+    background-color: var(--light_steel_blue);
+    margin-top: 65px;
+}
+
+.barangay ul li {
+    display: inline-block;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.barangay ul li .brgy_name {
+    font-size: 25px;
+}
+
+.barangay ul li img {
+    padding: 1px;
+}
+
+
+/* main */
+
+.worker_tab {
+    float: left;
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+    margin-right: 0.2%;
+    margin-left: 0.1%;
+    background-color: var(--beau_blue);
+    color: var(--black);
+}
+
+.contentTab {
+    background-color: var(--columbia_blue);
+    color: var(--black_coffee);
+}
+
+
+/* officials */
+
+.title {
+    font-size: 2em;
+    padding: 30px;
+    color: var(--oxford_blue);
+}
+
+
+/* SK officials */
+
+.sk_officials {
+    position: relative;
+    text-align: center;
+}
+
+.sk_officials dl {
+    transition: 0.5s;
+}
+
+.sk_officials dt {
+    display: inline-table;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.sk_members ul {
+    position: relative;
+    transition: 0.5s;
+}
+
+.sk_members li {
+    position: relative;
+    padding: 15px;
+    display: inline-table;
+    transition: 0.5s;
+}
+
+.sk_name_title {
+    color: var(--oxford_blue);
+}
+
+
+/* brgy officials */
+
+.brgy_officials {
+    position: relative;
+    text-align: center;
+}
+
+.brgy_officials dl {
+    transition: 0.5s;
+}
+
+.brgy_officials dt {
+    display: inline-table;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.kagawad ul {
+    position: relative;
+    transition: 0.5s;
+}
+
+.kagawad li {
+    position: relative;
+    padding: 20px;
+    display: inline-table;
+    transition: 0.5s;
+}
+
+.brgy_name_title {
+    color: var(--oxford_blue);
+}

@@ -18,7 +18,6 @@
 }
 
 body {
-    overflow-x: hidden;
     background: var(--honeydew);
     margin: auto;
     transition: 0.5s;
@@ -189,4 +188,51 @@ body {
 
 .sticky+.main {
     padding-top: 60px;
+}
+
+
+/* admin */
+
+.edit {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.formTab {
+    background: var(--honeydew);
+    color: var(--black_coffee);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.formTab form {
+    padding: 20px;
+}
+
+.in_data {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.in_data input {
+    width: 50px;
+    font-size: 20px;
+}
+
+.submit_btn {
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 2em;
 }

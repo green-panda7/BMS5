@@ -15,7 +15,7 @@
         <div class = "headings">
             <ul>
                 <span class="nav">
-                    <li><a href="#"><span class="nav_title">HOME</span></a></li>
+                    <li><a href="home.php"><span class="nav_title">HOME</span></a></li>
                     <li><a href="#"><span class="nav_title">SERVICES</span></a></li>
                     <li><a href="#"><span class="nav_title">CONTACT US</span></a></li>
                     <li><a href="#"><span class="nav_title">MAP</span></a></li>
@@ -62,18 +62,8 @@
                 <ul>
                     <li>
                         <div class="imgs"><img src="images/population.png"></div>
-                        <span class="num">1000000000</span><br>
+                        span class="num"><?php echo $_POST["population"]?></span><br>
                         <span class="dashboard_title">Population</span>
-                    </li>
-                    <li>
-                        <div class="imgs"><img src="images/population.png"></div>
-                        <span class="num">1000000000</span><br>
-                        <span class="dashboard_title">Household</span>
-                    </li>
-                    <li>
-                        <div class="imgs"><img src="images/population.png"></div>
-                        <span class="num">1000000000</span><br>
-                        <span class="dashboard_title">School</span>
                     </li>
                     <li>
                         <div class="imgs"><img src="images/population.png"></div>
@@ -90,15 +80,20 @@
                         <span class="num">1000000000</span><br>
                         <span class="dashboard_title">Senior Citizen</span>
                     </li>
+                    <li>
+                        <div class="imgs"><img src="images/population.png"></div>
+                        <span class="num">1000000000</span><br>
+                        <span class="dashboard_title">Household</span>
+                    </li>
+                    <li>
+                        <div class="imgs"><img src="images/population.png"></div>
+                        <span class="num">1000000000</span><br>
+                        <span class="dashboard_title">School</span>
+                    </li>
                 </ul>
             </div>
         </div>   
     </div>
-    <script>
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "Hello World";
-        }
-    </script>
 </body>
 
 </html>
