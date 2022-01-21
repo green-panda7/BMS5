@@ -22,11 +22,13 @@
                     <li><a href="#"><span class="nav_title">MAP</span></a></li>
                 </span>
                 <li class="date">
-                        <?php 
-                            date_default_timezone_set("Asia/Manila"); 
-                            echo date("l jS \of F Y h:i:s A");
-                        ?>                            
-                   </li>
+                    <?php 
+                        date_default_timezone_set("Asia/Manila"); 
+                        echo date("l jS \of F Y h:i:s A");
+                    ?>                            
+                </li>
+                <li class="login"><a href="logout.php"><button class="login_btn">Logout</button></a></li>
+                </span>
             </ul>
         </div>
         <div class="barangay">
